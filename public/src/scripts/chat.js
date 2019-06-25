@@ -47,18 +47,3 @@ class Chatroom {
     }
   }
 }
-
-const chatroom = new Chatroom("general", "mikaela");
-
-chatroom.getChats(data => {
-  console.log(data);
-});
-
-setTimeout(() => {
-  chatroom.updateRoom("gaming");
-  chatroom.updateName("rene");
-  chatroom.getChats(data => {
-    console.log(data);
-  });
-  chatroom.addChat("timeout chatter");
-}, 3000);
