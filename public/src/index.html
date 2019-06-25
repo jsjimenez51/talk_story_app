@@ -21,9 +21,9 @@
       <div class="chat-rooms mb-3 text-center">
         <div class="my-2">Choose a chatroom:</div>
         <button class="btn" id="general">#general</button>
-        <button class="btn" id="activities">#general</button>
-        <button class="btn" id="music">#general</button>
-        <button class="btn" id="gaming">#general</button>
+        <button class="btn" id="activities">#activities</button>
+        <button class="btn" id="music">#music</button>
+        <button class="btn" id="gaming">#gaming</button>
       </div>
 
       <!-- chat list / window -->
@@ -58,6 +58,26 @@
         <div class="update-mssg"></div>
       </form>
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCFHvY6K4YE-SVzAE45QsiDiFY8Pn_Quuk",
+        authDomain: "ninja-js-firebase-work.firebaseapp.com",
+        databaseURL: "https://ninja-js-firebase-work.firebaseio.com",
+        projectId: "ninja-js-firebase-work",
+        storageBucket: "ninja-js-firebase-work.appspot.com",
+        messagingSenderId: "1093812704332",
+        appId: "1:1093812704332:web:22a79755b2f4d2b0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      //connects front end to backend
+      const db = firebase.firestore();
+    </script>
 
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
