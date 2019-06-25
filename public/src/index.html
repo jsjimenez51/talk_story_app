@@ -9,8 +9,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Chat Room</title>
+    <title>Talk Story Chat</title>
   </head>
   <body>
     <!-- container & title -->
@@ -44,7 +48,7 @@
 
       <!-- chat list / window -->
       <div class="chat-window">
-        <div class="room-display my-2">Current Room: #general</div>
+        <div class="room-display my-2 text-center">Current Room: #general</div>
         <ul class="chat-list list-group"></ul>
       </div>
 
@@ -61,20 +65,22 @@
         </div>
       </form>
     </div>
-    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
+    <!-- date fns fucntionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.9.0/date_fns.min.js"/></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyCFHvY6K4YE-SVzAE45QsiDiFY8Pn_Quuk",
-        authDomain: "ninja-js-firebase-work.firebaseapp.com",
-        databaseURL: "https://ninja-js-firebase-work.firebaseio.com",
-        projectId: "ninja-js-firebase-work",
-        storageBucket: "ninja-js-firebase-work.appspot.com",
-        messagingSenderId: "1093812704332",
-        appId: "1:1093812704332:web:22a79755b2f4d2b0"
+        apiKey: "AIzaSyBvir3Xh0YvUOyeXKBYktLxdB0ROGNrCUg",
+        authDomain: "talkstorychatroom.firebaseapp.com",
+        databaseURL: "https://talkstorychatroom.firebaseio.com",
+        projectId: "talkstorychatroom",
+        storageBucket: "talkstorychatroom.appspot.com",
+        messagingSenderId: "572981020147",
+        appId: "1:572981020147:web:3b04a1b18c9c487c"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);

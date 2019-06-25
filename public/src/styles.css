@@ -1,9 +1,20 @@
 body {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-size: cover;
   background-image: linear-gradient(
-    to bottom left,
-    rgba(50, 48, 131, 0.795),
-    rgb(218, 218, 218)
-  );
+      rgba(0%, 0%, 0%, 0.2),
+      rgba(82, 81, 81, 0.9)
+    ),
+    url(./imgs/beachimg.jpg);
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.list-group-item {
+  color: #555;
 }
 
 .container {
