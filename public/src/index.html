@@ -26,6 +26,21 @@
         <button class="btn" id="gaming">#gaming</button>
       </div>
 
+      <!-- update name form -->
+      <div class="my-2">Update your name or be 'Anonymous'</div>
+      <form class="new-name my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Update name:</div>
+          </div>
+          <input type="text" id="name" class="form-control" required />
+          <div class="input-group-append">
+            <input type="submit" class="btn" value="update" />
+          </div>
+        </div>
+        <div class="update-mssg"></div>
+      </form>
+
       <!-- chat list / window -->
       <div class="chat-window">
         <ul class="chat-list list-group"></ul>
@@ -43,22 +58,7 @@
           </div>
         </div>
       </form>
-
-      <!-- update name form -->
-      <form class="new-name my-3">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text">Update name:</div>
-          </div>
-          <input type="text" id="name" class="form-control" required />
-          <div class="input-group-append">
-            <input type="submit" class="btn" value="update" />
-          </div>
-        </div>
-        <div class="update-mssg"></div>
-      </form>
     </div>
-
     <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
